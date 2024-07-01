@@ -7,6 +7,10 @@ use App\Ports\UserRepository;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\Test;
 
+/**
+ * AbstractUserRepository contains the test methods and various assertions.
+ * They do not contain any implementation-specific logic.
+ */
 abstract class AbstractUserRepository extends TestCase
 {
     protected abstract function repository(): UserRepository;
